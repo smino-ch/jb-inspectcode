@@ -20,7 +20,9 @@ jb-inspect
 └── jb-inspect.sln
 ```
 
-## Command
+## Project Command
+
+This command does cause issue.
 
 ```
 jb inspectcode ./App.One/App.One/App.One.csproj --output=report.xml --build
@@ -44,11 +46,46 @@ Analyzing App.One.GeneratedMSBuildEditorConfig.editorconfig
 Analyzing analysislevel_6_default.editorconfig
 Analyzing App.One.csproj
 Inspecting Program.cs
-Inspecting report.xml
 Inspecting Lib.One.csproj.nuget.dgspec.json
 Inspecting launchSettings.json
 Inspecting appsettings.json
 Inspecting appsettings.Development.json
 Inspecting project.assets.json
 Inspection report was written to /$HOME/src/jb-inspect/App.One/App.One/report.xml
+```
+
+## Solution Command
+
+This command does not cause issue.
+
+```
+jb inspectcode jb-inspect.sln --output=report.xml --build
+```
+
+## Output
+
+```
+JetBrains Inspect Code 2022.1.2
+Running on AMD 64 in 64-bit mode, .NET 6.0.7 under Darwin 21.5.0 Darwin Kernel Version 21.5.0: Tue Apr 26 21:08:22 PDT 2022; root:xnu-8020.121.3~4/RELEASE_X86_64
+Using toolset version 17.0 from /usr/local/share/dotnet/sdk/6.0.302
+Configuration: Debug, Platform: Any CPU
+Analyzing files
+
+Analyzing Lib.One.csproj.nuget.g.props
+Analyzing Lib.One.csproj.nuget.g.targets
+Analyzing project.nuget.cache
+Analyzing App.One.GeneratedMSBuildEditorConfig.editorconfig
+Analyzing analysislevel_6_default.editorconfig
+Analyzing App.One.csproj
+Analyzing Lib.One.GeneratedMSBuildEditorConfig.editorconfig
+Analyzing analysislevel_6_default.editorconfig
+Analyzing Lib.One.csproj
+Inspecting Lib.One.csproj.nuget.dgspec.json
+Inspecting launchSettings.json
+Inspecting project.assets.json
+Inspecting appsettings.Development.json
+Inspecting appsettings.json
+Inspecting Program.cs
+Inspecting Class1.cs
+Inspection report was written to /$HOME/src/jb-inspect/report.xml
 ```
