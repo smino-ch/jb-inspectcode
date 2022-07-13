@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Lib.One\Lib.One\Lib.One.csproj" />
+    <ProjectReference Include="..\..\Lib.One\Lib.One.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
