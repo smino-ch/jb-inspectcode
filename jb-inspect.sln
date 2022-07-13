@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App.One", "App.One", "{C1E2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.One", "App.One\App.One\App.One.csproj", "{782C092A-C821-457A-B9F4-F576FF2B5531}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib.One", "Lib.One\Lib.One.csproj", "{FB02D249-7688-4921-9FB2-E4E36C584952}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{782C092A-C821-457A-B9F4-F576FF2B5531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{782C092A-C821-457A-B9F4-F576FF2B5531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{782C092A-C821-457A-B9F4-F576FF2B5531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB02D249-7688-4921-9FB2-E4E36C584952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB02D249-7688-4921-9FB2-E4E36C584952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB02D249-7688-4921-9FB2-E4E36C584952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB02D249-7688-4921-9FB2-E4E36C584952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{782C092A-C821-457A-B9F4-F576FF2B5531} = {C1E22770-199F-4AFC-98DD-7AB3169E00B5}
